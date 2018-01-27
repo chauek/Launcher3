@@ -111,8 +111,8 @@ public class NexusLauncher {
 
             prefs.registerOnSharedPreferenceChangeListener(this);
 
-            SmartspaceController.get(fB).cW();
-            mSmartspace = fB.findViewById(R.id.search_container_workspace);
+//            SmartspaceController.get(fB).cW();
+//            mSmartspace = fB.findViewById(R.id.search_container_workspace);
 
             mUiInformation.putInt("system_ui_visibility", fB.getWindow().getDecorView().getSystemUiVisibility());
             WallpaperColorInfo instance = WallpaperColorInfo.getInstance(fB);

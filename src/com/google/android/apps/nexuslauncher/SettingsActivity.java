@@ -73,11 +73,11 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
             try {
                 PackageInfo packageInfo = packageManager.getPackageInfo(mContext.getPackageName(), 0);
                 findPreference(APP_VERSION_PREF).setSummary(packageInfo.versionName);
-                if (SmartspaceController.get(mContext).cY()) {
-                    findPreference(SMARTSPACE_PREF).setOnPreferenceClickListener(this);
-                } else {
-                    getPreferenceScreen().removePreference(findPreference("pref_smartspace"));
-                }
+//                if (SmartspaceController.get(mContext).cY()) {
+//                    findPreference(SMARTSPACE_PREF).setOnPreferenceClickListener(this);
+//                } else {
+//                    getPreferenceScreen().removePreference(findPreference("pref_smartspace"));
+//                }
             } catch (PackageManager.NameNotFoundException ex) {
                 Log.e("SettingsActivity", "Unable to load my own package info", ex);
             }
